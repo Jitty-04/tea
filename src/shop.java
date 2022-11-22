@@ -37,6 +37,11 @@ public class shop {
                      int coffee = input.nextInt();
                      c.coffee = coffee;
                      break;
+                 case 3:
+                     System.out.println("Enter count of snacks");
+                     int snacks = input.nextInt();
+                     c.snacks = snacks;
+                     break;
              }
         }
     }
