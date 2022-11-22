@@ -26,6 +26,13 @@ public class shop {
                     " 5 - dosa-6\n 6 - Generate Bill \n 7 - view all transaction \n 8 - exit");
             Scanner input = new Scanner(System.in);
             int n = input.nextInt();
+             switch (n) {
+                 case 1:
+                     System.out.println("Enter the count of tea");
+                     int tea = input.nextInt();
+                     c.tea = tea;
+                     break;
+             }
         }
     }
 }
