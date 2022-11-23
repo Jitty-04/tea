@@ -26,6 +26,7 @@ public class shop {
                     " 5 - dosa-6\n 6 - Generate Bill \n 7 - view all transaction \n 8 - exit");
             Scanner input = new Scanner(System.in);
             int n = input.nextInt();
+            while (true){
              switch (n) {
                  case 1:
                      System.out.println("Enter the count of tea");
@@ -75,6 +76,10 @@ public class shop {
                          System.out.println("total amount is " + prs.generateBill(prs.name, prs.phnNo));
                      }
                      break;
+                 case 8:
+                     System.out.println("you are exiting from the program");
+                     System.exit(0);
+             }
 
 
              }
