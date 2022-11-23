@@ -52,6 +52,21 @@ public class shop {
                      int dosa = input.nextInt();
                      c.dosa = dosa;
                      break;
+                 case 6:
+                     System.out.println("Generating the bill");
+                     System.out.println("Enter name and phn Number");
+                     String name = input.next();
+                     long phnNo = input.nextLong();
+                     customers.add(c);
+                     System.out.println("name : " + name);
+                     System.out.println("phnNo : " + phnNo);
+                     System.out.println("Count of tea : " + c.tea + " total price for tea : " + c.tea * 10);
+                     System.out.println("Count of Coffee : " + c.coffee + " total price for coffee : " + c.coffee * 15);
+                     System.out.println("Count of snacks : " + c.snacks + " total price for snacks : " + c.snacks * 10);
+                     System.out.println("Count of idli : " + c.idli + " total price for idli : " + c.idli * 8);
+                     System.out.println("Count of dosa : " + c.dosa + " total price for dosa : " + c.dosa * 6);
+                     System.out.println("total amount is " + c.generateBill(name,phnNo));
+                     break;
              }
         }
     }
