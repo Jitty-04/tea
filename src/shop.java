@@ -67,6 +67,16 @@ public class shop {
                      System.out.println("Count of dosa : " + c.dosa + " total price for dosa : " + c.dosa * 6);
                      System.out.println("total amount is " + c.generateBill(name,phnNo));
                      break;
+                 case 7:
+                     System.out.println("viewing all the transactions");
+                     for (Customer prs : customers) {
+                         System.out.println("name : " + prs.name);
+                         System.out.println("phnNo : " + prs.phnNo);
+                         System.out.println("total amount is " + prs.generateBill(prs.name, prs.phnNo));
+                     }
+                     break;
+
+
              }
         }
     }
