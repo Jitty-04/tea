@@ -42,6 +42,11 @@ public class shop {
                      int snacks = input.nextInt();
                      c.snacks = snacks;
                      break;
+                 case 4:
+                     System.out.println("Enter count of idli");
+                     int idli = input.nextInt();
+                     c.idli = idli;
+                     break;
              }
         }
     }
