@@ -47,6 +47,11 @@ public class shop {
                      int idli = input.nextInt();
                      c.idli = idli;
                      break;
+                 case 5:
+                     System.out.println("Enter count of dosa");
+                     int dosa = input.nextInt();
+                     c.dosa = dosa;
+                     break;
              }
         }
     }
